@@ -11,6 +11,23 @@ A small Python project that analyses mock login attempt data and flags repeated 
 
 Repeated failed login attempts can indicate brute-force activity, password guessing, compromised accounts, or poor access-control hygiene. This project demonstrates a basic way to review login data and highlight patterns that may need investigation.
 
+## Example Output
+
+```text
+Login Failure Analysis Report
+=============================
+Total login attempts: 9
+Total failed logins: 7
+Alert threshold: 5 failed attempts
+
+Suspicious usernames
+--------------------
+admin: 5 failed login attempts
+
+Suspicious IP addresses
+-----------------------
+185.22.91.10: 5 failed login attempts
+
 ## Skills Demonstrated
 
 * Python scripting
