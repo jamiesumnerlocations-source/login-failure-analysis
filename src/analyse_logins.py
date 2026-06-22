@@ -3,7 +3,8 @@ from collections import Counter
 from pathlib import Path
 
 
-INPUT_FILE = Path("data/sample_login_attempts.csv")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_FILE = PROJECT_ROOT / "data" / "sample_login_attempts.csv"
 FAILED_LOGIN_THRESHOLD = 5
 
 
